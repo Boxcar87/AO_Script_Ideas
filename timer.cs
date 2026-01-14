@@ -102,7 +102,7 @@ public class Timer
         CustomTimers[name].Item2.Dispose();
         Console.WriteLine($"{name} timer has been disposed"); // Left in for testing functionality
         CustomTimers.Remove(name);
-        GetTimers();
+        // Send message to player 
     }
 
     // Convert time into readable string
@@ -139,4 +139,5 @@ public class Timer
         Console.ReadLine(); // Press enter to see results
         return GetTimers();
     }
+
 }
