@@ -7,9 +7,9 @@ using System.Text.RegularExpressions;
 //(null, "Error")
 
 // Can uncomment these for simple testing in a CLI with dotnet
-// (double? product, string stringResponse) = Calc.GetResult("(431+12+20+76+131)*2+3000+3000+3000+3000+3000+3000+3000+3000", true);
-// Console.Write(stringResponse);
-// File.WriteAllText("output.txt", stringResponse); //Sometimes easier to copy text for testing from a file.
+(double? product, string stringResponse) = Calc.GetResult("(431+12+20+76+131)*2+3000+3000+3000+3000+3000+3000+3000+3000", true);
+Console.Write(stringResponse);
+File.WriteAllText("output.txt", stringResponse); //Sometimes easier to copy text for testing from a file.
 
 public class Calc
 {
@@ -93,4 +93,5 @@ public class Calc
             return null;            
         }
     }
+
 }
